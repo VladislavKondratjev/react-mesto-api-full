@@ -21,7 +21,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(requestLogger);
 app.use(cors({
-  origin: 'http://localhost:3001',
+  origin: 'http://vkondratjev.nomoredomains.icu',
   credentials: true,
 }));
 app.use(router);

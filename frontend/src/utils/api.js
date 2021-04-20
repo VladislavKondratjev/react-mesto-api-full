@@ -15,7 +15,6 @@ class Api {
         return fetch(`${this._address}/cards`, {
             method: 'GET',
             headers: {
-                // authorization: this._token, 
                 'Authorization': `Bearer ${localStorage.getItem('jwt')}`,
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
@@ -128,6 +127,6 @@ class Api {
 }
 
 export const api = new Api({
-    address: 'http://localhost:3000',
+    address: 'api.vkondratjev.nomoredomains.icu',
     token: `Bearer ${localStorage.getItem('jwt')}`,
 })
