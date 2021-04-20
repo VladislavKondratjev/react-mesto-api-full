@@ -18,9 +18,9 @@ const { PORT = 3000 } = process.env;
 
 const app = express();
 
+app.use(cors());
 app.use(bodyParser.json());
 app.use(requestLogger);
-app.use(cors());
 app.use(router);
 app.post('/signin', loginValidation, login);
 app.post('/signup', createUserValidation, createUser);
