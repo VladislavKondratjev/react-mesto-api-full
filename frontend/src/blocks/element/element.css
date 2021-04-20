@@ -1,0 +1,13 @@
+.element {
+  position: relative;
+  border-radius: 10px;
+  background-color: white;
+  overflow: hidden;
+  padding-bottom: 4px;
+}
+
+@media screen and (max-width: 767px) {
+  .element {
+    padding-bottom: 0;
+  }
+}

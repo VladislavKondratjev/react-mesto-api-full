@@ -1,0 +1,6 @@
+.sign-in__form {
+  margin-top: 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

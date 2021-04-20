@@ -1,0 +1,21 @@
+.header__burger-menu_close {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .header__burger-menu_close {
+    display: block;
+    background-image: url(../../../../images/header__burger-menu_close.svg);
+    position: absolute;
+    border: none;
+    width: 26px;
+    height: 26px;
+    right: 10px;
+    top: 169px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .header__burger-menu_close + .header__nav {
+    display: flex;
+  }
+}

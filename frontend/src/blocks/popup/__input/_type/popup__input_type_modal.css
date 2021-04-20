@@ -1,0 +1,8 @@
+@media screen and (max-width: 767px) {
+    .popup__input_type_modal {
+        margin-top: 12px;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+    }
+}

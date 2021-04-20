@@ -1,0 +1,9 @@
+.page {
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: black;
+    color: white;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%; 
+}

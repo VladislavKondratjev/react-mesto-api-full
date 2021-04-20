@@ -1,0 +1,13 @@
+.register__link-to-login {
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 767px) {
+  .register__link-to-login {
+    margin-top: 20px;
+  }
+}

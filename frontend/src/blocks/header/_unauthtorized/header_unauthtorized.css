@@ -1,0 +1,7 @@
+.header_unauthtorized {
+  border-bottom: 1px solid rgba(82, 82, 82, 0.7);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: baseline;
+}

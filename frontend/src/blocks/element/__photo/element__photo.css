@@ -1,0 +1,14 @@
+.element__photo {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  height: 282px;
+  cursor: zoom-in;
+}
+
+@media screen and (max-width: 1023px) {
+  .element__photo {
+    height: 208px;
+  }
+}

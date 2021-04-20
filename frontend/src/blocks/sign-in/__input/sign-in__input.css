@@ -1,0 +1,21 @@
+.sign-in__input {
+  color: white;
+  border: 0;
+  outline: none;
+  margin-top: 8px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #cccccc;
+  background-color: black;
+  margin-bottom: 20px;
+  width: 354px;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .sign-in__input {
+    width: 257px;
+    margin-top: 0;
+    margin-bottom: 28px;
+    padding-bottom: 7px;
+  }
+}

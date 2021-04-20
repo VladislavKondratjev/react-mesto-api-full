@@ -1,0 +1,19 @@
+.header__nav_exit-link {
+  text-decoration: none;
+  font-weight: normal;
+  margin-top: 9px;
+  margin-left: 25px;
+  font-size: 18px;
+  line-height: 22px;
+  color: white;
+  display: inline-block;
+}
+
+@media screen and (max-width: 767px) {
+  .header__nav_exit-link {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 19px;
+    margin-left: 0px;
+  }
+}

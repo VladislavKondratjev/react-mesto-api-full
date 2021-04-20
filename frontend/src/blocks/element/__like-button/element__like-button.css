@@ -1,0 +1,18 @@
+.element__like-button {
+  position: absolute;
+  border: none;
+  background-image: url(../../../images/element__like-button.svg);
+  width: 21px;
+  height: 18px;
+  background-color: white;
+  right: 19px;
+  bottom: 39px;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 767px) {
+  .element__like-button {
+    right: 17px;
+    bottom: 27px;
+  }
+}

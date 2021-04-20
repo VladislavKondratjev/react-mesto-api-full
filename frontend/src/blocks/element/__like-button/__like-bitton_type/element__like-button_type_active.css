@@ -1,0 +1,22 @@
+.element__like-button_type_active {
+  background-image: url(../../../../images/element__like-button_type_active.svg);
+  position: absolute;
+  border: none;
+  width: 21px;
+  height: 18px;
+  background-color: white;
+  right: 19px;
+  bottom: 39px;
+  transition: 0.3s;
+}
+
+.element__like-button_type_active:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .element__like-button_type_active {
+    right: 17px;
+    bottom: 27px;
+  }
+}

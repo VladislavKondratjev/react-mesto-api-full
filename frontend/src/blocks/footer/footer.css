@@ -1,0 +1,11 @@
+.footer {
+  color: #545454;
+  padding-top: 62px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    padding-top: 0;
+  }
+}

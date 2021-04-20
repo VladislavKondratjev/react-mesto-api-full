@@ -1,0 +1,12 @@
+.header__links {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+/* @media screen and (max-width: 767px) {
+  .header__links {
+    align-items: center;
+    flex-direction: column;
+  }
+} */

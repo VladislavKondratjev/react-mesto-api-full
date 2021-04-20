@@ -1,0 +1,13 @@
+.header {
+  border-bottom: 1px solid rgba(82, 82, 82, 0.7);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    flex-direction: column-reverse;
+  }
+}

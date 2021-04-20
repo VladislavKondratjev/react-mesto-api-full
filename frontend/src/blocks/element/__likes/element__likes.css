@@ -1,0 +1,14 @@
+.element__likes {
+  color: black;
+  font-size: 13px;
+  position: absolute;
+  right: 25px;
+  bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .element__likes {
+    right: 23px;
+    bottom: 10px;
+  }
+}

@@ -1,0 +1,10 @@
+.popup__title_type_newplace {
+  align-self: flex-start;
+  margin-left: 37px;
+}
+
+@media screen and (max-width: 767px) {
+  .popup__title_type_newplace {
+    margin-left: 20px;
+  }
+}
