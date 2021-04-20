@@ -20,10 +20,7 @@ const app = express();
 
 app.use(bodyParser.json());
 app.use(requestLogger);
-app.use(cors({
-  origin: 'http://vkondratjev.nomoredomains.icu',
-  credentials: true,
-}));
+app.use(cors());
 app.use(router);
 app.post('/signin', loginValidation, login);
 app.post('/signup', createUserValidation, createUser);
