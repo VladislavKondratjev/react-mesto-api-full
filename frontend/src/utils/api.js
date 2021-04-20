@@ -127,6 +127,6 @@ class Api {
 }
 
 export const api = new Api({
-    address: 'api.vkondratjev.nomoredomains.icu',
+    address: 'http://api.vkondratjev.nomoredomains.icu',
     token: `Bearer ${localStorage.getItem('jwt')}`,
 })
