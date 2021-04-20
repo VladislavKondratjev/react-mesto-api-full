@@ -5,8 +5,8 @@ const NotFoundError = require('../errors/not-found-error');
 const BadRequestError = require('../errors/bad-request-error');
 const Conflict = require('../errors/conflict-error');
 const UnathorizedError = require('../errors/unathorized-error');
+const { NODE_ENV, JWT_SECRET } = process.env;
 
-const JWT_SECRET = 'secret_key';
 
 module.exports.login = (req, res, next) => {
   const { email, password } = req.body;
@@ -20,7 +20,7 @@ module.exports.login = (req, res, next) => {
         next(new UnathorizedError('Неправильные почта или пароль'));
       }
       bcrypt.compare(password, user.password);
-      const token = jwt.sign({ _id: user._id }, JWT_SECRET, { expiresIn: '7d' });
+      const token = jwt.sign({ _id: user._id }, NODE_ENV === 'production' ? JWT_SECRET : 'dev-secret', { expiresIn: '7d' });
       res.status(200).send({ token });
     })
     .catch((err) => {
