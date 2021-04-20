@@ -1,7 +1,6 @@
 class Api {
     constructor({ address, token }) {
         this._address = address;
-        this._token = token;
     }
 
     _apiAnswer(res) {
@@ -128,5 +127,4 @@ class Api {
 
 export const api = new Api({
     address: 'http://api.vkondratjev.nomoredomains.icu',
-    token: `Bearer ${localStorage.getItem('jwt')}`,
 })

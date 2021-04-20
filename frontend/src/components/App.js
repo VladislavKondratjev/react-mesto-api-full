@@ -118,22 +118,6 @@ export default function App() {
       .catch((err) => console.log(err));
   }
 
-  React.useEffect(() => {
-    if (loggedIn) {
-      api.getUserData()
-        .then((res) => {
-          setCurrentUser(res.data)
-        })
-        .catch((err) => console.log(err));
-
-      api.getInitialCards()
-        .then((res) => {
-          setCards(res.data.reverse());
-        })
-        .catch((err) => console.log(err));
-    }
-  }, [loggedIn])
-
   const tokenCheck = React.useCallback(() => {
     const jwt = localStorage.getItem('jwt');
     if (jwt) {
@@ -195,6 +179,22 @@ export default function App() {
   React.useEffect(() => {
     tokenCheck();
   }, [tokenCheck])
+
+  React.useEffect(() => {
+    if (loggedIn) {
+      api.getUserData()
+        .then((res) => {
+          setCurrentUser(res.data)
+        })
+        .catch((err) => console.log(err));
+
+      api.getInitialCards()
+        .then((res) => {
+          setCards(res.data.reverse());
+        })
+        .catch((err) => console.log(err));
+    }
+  }, [loggedIn])
 
   return (
     <CurrentUserContext.Provider value={{ currentUser }}>

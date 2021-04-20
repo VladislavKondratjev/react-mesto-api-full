@@ -15,13 +15,13 @@ export const register = (email, password) => {
         .then(responseCheck)
 };
 
-export const login = (email, password, token) => {
+export const login = (email, password) => {
     return fetch(`${BASE_URL}/signin`, {
         method: 'POST',
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json',
-            'Authorization': `Bearer ${token}`,
+            'Authorization': `Bearer ${localStorage.getItem('jwt')}`,
         },
         body: JSON.stringify({ email, password })
     })
