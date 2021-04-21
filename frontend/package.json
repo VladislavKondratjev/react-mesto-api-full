@@ -20,7 +20,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && scp -r ./build/* vkondratjev@178.154.199.200:/home/vkondratjev/react-mesto-api-full/frontend",
+    "deploy": "npm run build && scp -r ./build/* vkondratjev@178.154.196.50:/home/vkondratjev/react-mesto-api-full/frontend",
     "predeploy": "npm run build"
   },
   "eslintConfig": {

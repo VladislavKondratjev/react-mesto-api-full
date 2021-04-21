@@ -1,4 +1,4 @@
-export const BASE_URL = 'http://api.vkondratjev.nomoredomains.icu';
+export const BASE_URL = 'https://api.vkondratjev.nomoredomains.icu';
 
 const responseCheck = (response) => response.ok ? response.json() : Promise.reject(`Ошибка ${response.status}`);
 

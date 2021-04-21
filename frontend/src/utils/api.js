@@ -126,5 +126,5 @@ class Api {
 }
 
 export const api = new Api({
-    address: 'http://api.vkondratjev.nomoredomains.icu',
+    address: 'https://api.vkondratjev.nomoredomains.icu',
 })
