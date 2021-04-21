@@ -1,5 +1,5 @@
 class Api {
-    constructor({ address, token }) {
+    constructor({ address }) {
         this._address = address;
     }
 
@@ -90,7 +90,7 @@ class Api {
     }
 
     putLike(id) {
-        return fetch(`${this._address}/cards/likes/${id}`, {
+        return fetch(`${this._address}/cards/${id}/likes`, {
             method: 'PUT',
             headers: {
                 'Authorization': `Bearer ${localStorage.getItem('jwt')}`,
@@ -101,7 +101,7 @@ class Api {
     }
 
     deleteLike(id) {
-        return fetch(`${this._address}/cards/likes/${id}`, {
+        return fetch(`${this._address}/cards/${id}/likes`, {
             method: 'DELETE',
             headers: {
                 'Authorization': `Bearer ${localStorage.getItem('jwt')}`,
