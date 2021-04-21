@@ -4,4 +4,4 @@
 Пожалуйста, прикрепите в это описание ссылку на сайт, размещенный на Яндекс.Облаке.
 Ссылка на сайт: https://vkondratjev.nomoredomains.icu/sign-in
 Ссылка на апи: https://api.vkondratjev.nomoredomains.icu/sign-in
-Публичный IP: 178.154.199.200
+Публичный IP: 178.154.196.50
