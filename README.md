@@ -3,5 +3,5 @@
 
 ## Ссылки  
 Ссылка на сайт: https://vkondratjev.nomoredomains.icu/  
-Ссылка на апи: https://api.vkondratjev.nomoredomains.icu/
+Ссылка на апи: https://api.vkondratjev.nomoredomains.icu/  
 Публичный IP: 178.154.196.50
